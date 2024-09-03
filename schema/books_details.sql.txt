@@ -1,0 +1,10 @@
+CREATE TABLE if not exists `books_details` (
+  `book_id` int NOT NULL,
+  `author` varchar(255) DEFAULT NULL,
+  `book_name` varchar(255) DEFAULT NULL,
+  `category` varchar(255) DEFAULT NULL,
+  `is_deleted` tinyint(1) DEFAULT '0',
+  `quantity` int DEFAULT NULL,
+  `status` int DEFAULT NULL,
+  PRIMARY KEY (`book_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

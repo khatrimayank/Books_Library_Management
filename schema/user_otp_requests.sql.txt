@@ -1,0 +1,7 @@
+CREATE TABLE if not exists `user_otp_requests` (
+  `user_id` bigint NOT NULL,
+  `created_at` datetime(6) DEFAULT NULL,
+  `otp` int NOT NULL,
+  `valid_till` datetime(6) DEFAULT NULL,
+  PRIMARY KEY (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

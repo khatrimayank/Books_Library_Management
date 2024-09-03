@@ -1,0 +1,11 @@
+CREATE TABLE if not exists `books_to_user` (
+  `serial_number` int NOT NULL,
+  `actual_return_time` datetime(6) DEFAULT NULL,
+  `book_id` int NOT NULL,
+  `is_returned` tinyint(1) DEFAULT '0',
+  `issue_time` datetime(6) DEFAULT NULL,
+  `return_time` datetime(6) DEFAULT NULL,
+  `user_id` bigint NOT NULL,
+  `is_deleted` tinyint(1) DEFAULT '0',
+  PRIMARY KEY (`serial_number`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

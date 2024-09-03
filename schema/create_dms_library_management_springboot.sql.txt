@@ -1,0 +1,1 @@
+CREATE DATABASE if not exists library_management_springboot;
