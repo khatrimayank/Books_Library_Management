@@ -1,0 +1,537 @@
+{
+	"info": {
+		"_postman_id": "a6cd5566-5c61-4429-a603-8677408b4f5d",
+		"name": "BookLibraryWithUser",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27014605"
+	},
+	"item": [
+		{
+			"name": "Get User Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8080/library-management/user-details",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"library-management",
+						"user-details"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \"name\":\"Khatri\",\r\n    \"mobileNumber\": \"7327987230\",\r\n    \"role\":\"USER\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/user-management/signup",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"user-management",
+						"signup"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verify User Details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"otp\":\"514709\",\r\n    \"mobileNumber\": \"7327987230\"   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/user-management/verify",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"user-management",
+						"verify"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generate New Otp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n    \"mobileNumber\": \"7327987232\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/user-management/new-otp",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"user-management",
+						"new-otp"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "tokenKey",
+						"value": "gT?PV]S.(Kj-(_R{$n9u",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8080/user-management/delete-user",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"user-management",
+						"delete-user"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "tokenKey",
+						"value": "Pu:PsZLl!1*88bzuK=A&",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \"author\": \"Modiji\",\r\n    \"bookName\":\"learn Apishgft\",\r\n    \"category\":\"study\",\r\n    \"quantity\":\"1\",\r\n    \"status\":\"AVAILABLE\",\r\n    \"isDeleted\":false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/library-management/books/v1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"library-management",
+						"books",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Book By Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "tokenKey",
+						"value": "b;;5mI!!iM$*p8;$#|4z",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \"author\": \"Raju Devi\",\r\n    \"bookName\":\"How to Sleep\",\r\n    \"category\":\"HEALTH\",\r\n    \"quantity\":\"50\",\r\n    \"status\":\"AVAILABLE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/library-management/books/v1/54",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"library-management",
+						"books",
+						"v1",
+						"54"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Book By Any Filter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8080/library-management/books/v1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"library-management",
+						"books",
+						"v1"
+					],
+					"query": [
+						{
+							"key": "author",
+							"value": "Mayank",
+							"disabled": true
+						},
+						{
+							"key": "quantity",
+							"value": "124",
+							"disabled": true
+						},
+						{
+							"key": "category",
+							"value": "study",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8080/library-management/books/v1/all",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"library-management",
+						"books",
+						"v1",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Partial Book Details",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "tokenKey",
+						"value": "b;;5mI!!iM$*p8;$#|4z",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"quantity\":\"50\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/books/v1/24",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"books",
+						"v1",
+						"24"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Book By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "tokenKey",
+						"value": "Pu:PsZLl!1*88bzuK=A&",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8080/library-management/books/v1/23",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"library-management",
+						"books",
+						"v1",
+						"23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Issue Book To User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "tokenKey",
+						"value": "^Os%OxQ3H7)mjM|5HBZN",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8080/library-management/books/v1/issue/66",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"library-management",
+						"books",
+						"v1",
+						"issue",
+						"66"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Return Book ",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "tokenKey",
+						"value": "^Os%OxQ3H7)mjM|5HBZN",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8080/library-management/books/v1/return/66",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"library-management",
+						"books",
+						"v1",
+						"return",
+						"66"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
